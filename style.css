@@ -14,5 +14,10 @@ header {
 main {
     margin-top: 50px;
     font-family: "Montserrat",sans-serif;
-    font-size: 36px;
+    font-size: 200%;
+}
+
+img {
+    width: 45%;
+    height: auto;
 }
