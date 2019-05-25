@@ -14,12 +14,29 @@ header {
 main {
     margin-top: 50px;
     font-family: "Montserrat",sans-serif;
-    font-size: 200%;
 }
 
 img {
     width: 45%;
     height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+.about {
+    font-size: 18px;
+    text-align: left;
+}
+
+.test {
+    font-size: 18px;
+    text-align: left;
 }
 
 /* Add a black background color to the top navigation */
