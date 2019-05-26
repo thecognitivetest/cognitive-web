@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body {
+    background: linear-gradient(to right, #006699 0%, #000033 100%) !important;
+    color: white !important;
+} */
+
 main {
     min-width: 100px;
     max-width: 700px;
@@ -48,16 +53,17 @@ h1 {
         position: fixed;
         width: 50px;
         height: 50px;
-        background: #C26090;
+        background: #d53a9d;
         bottom: 40px;
         right: 50px;
-        /* border-radius: 10px; */
+        border-radius: 10px;
 
         text-decoration: none;
         line-height: 50px;
         text-align: center;
         color: white;
         font-size: 22px;
+        cursor: default;
     }
 }
 
@@ -72,7 +78,6 @@ h1 {
     padding: 40px;
     counter-increment: section;
     position: relative;
-    color: black;
 }
 
 .test:nth-child(odd) h2{
@@ -140,7 +145,6 @@ h1 {
     padding: 40px;
     counter-increment: section;
     position: relative;
-    color: black;
 }
 
 .about:nth-child(odd) h2{
@@ -239,7 +243,8 @@ input[type=submit]:hover {
 }
 
 .chip a {
-    color: inherit;
+    color: black;
+    cursor: default;
     text-decoration: none;
 }
 
