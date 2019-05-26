@@ -7,26 +7,63 @@
         <title>Cognitive</title>
         <link rel="icon" href="favicon.png">
         <link type="text/css" rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">    
     </head>
 
     <body>
 
         <div class="topnav">
-            <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>     
-            <a href="test.html"><i class="fa fa-fw fa-pencil"></i> The Test</a>
-            <a href="about.html"><i class="fa fa-fw fa-newspaper-o"></i> About</a>
-            <a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>             
+            <a href="test.html"><i class="fas fa-brain"></i> The Test</a>
+            <a href="merch.html"><i class="fas fa-tshirt"></i> Merch</a>
+            <a href="about.html"><i class="fas fa-users"></i> About</a>
+            <a class="active" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>        </div> 
         </div> 
 
-        <header>
+        <!-- <header>
             <a href="index.html">
                 <img src="logo.png" alt="LOGO"/>
             </a>
-        </header>
+        </header> -->
 
         <main>
-            <h1>Contact Us</h1>            
+            <h1>Contact Us</h1>      
+
+            <div class="container">
+                <form action="action_page.php">
+                
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" id="name" name="name" placeholder="NAME">
+                
+                    <!-- <label for="email">Email</label> -->
+                    <input type="text" id="email" name="email" placeholder="EMAIL">
+
+                    </select>
+                
+                    <!-- <label for="message">Message</label> -->
+                    <textarea id="message" name="message" placeholder="MESSAGE" style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                
+                </form>
+            </div> 
+            
+            
+            <div class="chip">
+                <a href="mailto:praveen@cognitivetest.xyz">
+                    <img src="https://photos.peterhurley.com/sites/default/files/styles/big/public/photos/2015/03/15/kevin%C2%A9peterhurley.jpg?itok=AKa1Q2lh" alt="Person" width="96" height="96">
+                    Praveen P
+                </a>
+            </div> 
+            
+
+            <div class="chip">
+                <a href="mailto:abhinav@cognitivetest.xyz">
+                    <img src="https://michael-schacht.com/wp-content/uploads/2018/02/parkerheadshot.jpg" alt="Person" width="96" height="96">
+                    Abhinav V
+                </a>
+            </div> 
+
         </main>
 
     </body>
