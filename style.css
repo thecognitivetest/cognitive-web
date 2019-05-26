@@ -67,6 +67,14 @@ h1 {
     }
 }
 
+.gotopbtn:hover {
+    color: white !important;
+}
+
+.navbar-brand {
+    max-width: 45px;
+}
+
 .test {
     font-size: 1em;
     line-height: 1.75em;
@@ -243,9 +251,9 @@ input[type=submit]:hover {
 }
 
 .chip a {
-    color: black;
-    cursor: default;
-    text-decoration: none;
+    color: black !important;
+    /* cursor: default; */
+    text-decoration: none !important;
 }
 
 .chip img {

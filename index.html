@@ -17,7 +17,7 @@
     <body>
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <!-- <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i></a>              -->
+            <img class="navbar-brand" src="favicon.png"/>             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -64,7 +64,7 @@
 
             function subscribe() {       
                 db.collection("subs").add({
-                    email: document.getElementById("email").textContent,
+                    email: document.getElementById("email").value,
                 })
                 .then(function(docRef) {
                     console.log("Document written with ID: ", docRef.id);
