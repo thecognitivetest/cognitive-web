@@ -45,12 +45,42 @@
             <!-- </a> -->
         </header>
 
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+        
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyBchPIaXkSX2n6We4Dsp5rVkjTB5FKJiQo",
+                authDomain: "cognitive-f72bb.firebaseapp.com",
+                databaseURL: "https://cognitive-f72bb.firebaseio.com",
+                projectId: "cognitive-f72bb",
+                storageBucket: "cognitive-f72bb.appspot.com",
+                messagingSenderId: "940470277749",
+                appId: "1:940470277749:web:43c1f58aab5c16d3"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+            var db = firebase.firestore();
+
+            function subscribe() {       
+                db.collection("subs").add({
+                    email: document.getElementById("email").textContent,
+                })
+                .then(function(docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+            }
+        </script>
+
         <main>
 
             <h1>Coming Soon</h1>  
             <p class="text-center">Subscribe to be notified when we launch</p>  
-            <form class="text-center" action="action_page.php">                
-                <input type="text" id="email" name="email" placeholder="EMAIL">                            
+            <form class="text-center" onSubmit="JavaScript:subscribe()">                
+                <input type="text" id="email" name="email" required placeholder="EMAIL">                            
                 <input type="submit" value="Submit">
             </form>
 
