@@ -33,11 +33,6 @@ h1 {
     text-align: center;
 }
 
-.about p{
-    font-size: 18px;
-    text-align: left;
-}
-
 .topnav {
     /* position: fixed;
     top: 0;
@@ -72,6 +67,7 @@ h1 {
     background: #C26090;
     bottom: 40px;
     right: 50px;
+    /* border-radius: 10px; */
 
     text-decoration: none;
     line-height: 50px;
@@ -101,7 +97,7 @@ h1 {
     text-align: left;
 }
     
-/* .test::before {
+.test::before {
     content: counter(section);
     position: absolute;
     border-radius: 50%;
@@ -113,7 +109,7 @@ h1 {
     line-height: 1.25em;
     color: white;
     font-size: 1em;
-} */
+}
   
 .test:nth-child(odd) {
     text-align: right;
@@ -121,10 +117,10 @@ h1 {
     padding-left: 0;
 }
 
-/* .test:nth-child(odd)::before {
+.test:nth-child(odd)::before {
     left: 100%; 
     margin-left: -20px;
-} */
+}
 
 .test:nth-child(even) {
     text-align: left;
@@ -132,10 +128,10 @@ h1 {
     padding-right: 0;
 }
     
-/* .test:nth-child(even)::before {
+.test:nth-child(even)::before {
     right: 100%; 
     margin-right: -20px;
-} */
+}
 
 .test:first-child {
     border-top: 0;
@@ -144,6 +140,51 @@ h1 {
 }
 
 .test:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+
+.about {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: black;
+}
+
+.about:nth-child(odd) h2{
+    text-align: right;
+}
+
+.about:nth-child(even) h2{
+    text-align: left;
+}
+  
+.about:nth-child(odd) {
+    text-align: right;
+    border-right: 3px solid;
+    padding-left: 0;
+}
+
+.about:nth-child(even) {
+    text-align: left;
+    border-left: 3px solid;
+    padding-right: 0;
+}
+
+.about:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+
+.about:last-child {
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
 }
