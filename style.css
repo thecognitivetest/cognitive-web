@@ -2,6 +2,7 @@
 
 body {
     display: block;
+    margin: 0;
     background-color: #e6e6e6;
     color: #000000;
     text-align: center;
@@ -12,6 +13,9 @@ header {
 }
 
 main {
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
     margin-top: 50px;
     font-family: "Montserrat",sans-serif;
 }
@@ -25,44 +29,100 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    text-align: left;
-}
-
 .about {
     font-size: 18px;
     text-align: left;
 }
 
-.test {
-    font-size: 18px;
-    text-align: left;
-}
-
-/* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
+}
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
+.topnav a {
     float: left;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
+}
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #e6e6e6;
     color: black;
-  }
+}
   
-  /* Add a color to the active/current link */
-  .topnav a.active {
+.topnav a.active {
     background-color: #C26090;
     color: white;
-  }
+}
+
+.test {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: black;
+}
+
+.test:nth-child(odd) h2{
+    text-align: right;
+}
+
+.test:nth-child(even) h2{
+    text-align: left;
+}
+    
+.test::before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25em;
+    width: 1.25em;
+    background-color: black;
+    text-align: center;
+    line-height: 1.25em;
+    color: white;
+    font-size: 1em;
+}
+  
+.test:nth-child(odd) {
+    text-align: right;
+    border-right: 3px solid;
+    padding-left: 0;
+}
+
+.test:nth-child(odd)::before {
+    left: 100%; 
+    margin-left: -20px;
+}
+
+.test:nth-child(even) {
+    text-align: left;
+    border-left: 3px solid;
+    padding-right: 0;
+}
+    
+.test:nth-child(even)::before {
+    right: 100%; 
+    margin-right: -20px;
+}
+
+.test:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+
+.test:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
