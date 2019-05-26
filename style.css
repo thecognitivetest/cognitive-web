@@ -4,28 +4,15 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    display: block;
-    margin: 0;
-    background-color: #e6e6e6;
-    color: #000000;
-    text-align: center;
-}
-
-header {
-    margin-top: 100px;
-}
-
 main {
     min-width: 100px;
     max-width: 700px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     font-family: "Montserrat",sans-serif;
 }
 
 h1 {
-    padding-top: 50px;
     text-align: center;
 }
 
@@ -46,6 +33,7 @@ h1 {
 }
 
 .logo {
+    margin-top: 100px;
     max-width: 50%;
     height: auto;
 }
