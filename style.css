@@ -39,19 +39,26 @@ h1 {
 }
 
 .gotopbtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: #C26090;
-    bottom: 40px;
-    right: 50px;
-    /* border-radius: 10px; */
+    display: none;
+}
 
-    text-decoration: none;
-    line-height: 50px;
-    text-align: center;
-    color: white;
-    font-size: 22px;
+@media screen and (min-width: 768px) {
+    .gotopbtn {
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #C26090;
+        bottom: 40px;
+        right: 50px;
+        /* border-radius: 10px; */
+
+        text-decoration: none;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
 }
 
 .test {
