@@ -5,13 +5,12 @@ html {
 }
 
 /* body {
-    background: linear-gradient(to right, #006699 0%, #000033 100%) !important;
+    background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
     color: white !important;
 } */
 
 main {
-    min-width: 100px;
-    max-width: 700px;
+    /* max-width: 1000px; */
     margin: auto;
     margin-top: 100px;
     font-family: "Montserrat",sans-serif;
@@ -19,6 +18,20 @@ main {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    /* background: #888 */
 }
 
 ::-webkit-scrollbar {
@@ -44,7 +57,6 @@ h1 {
 .logo {
     margin-top: 100px;
     max-width: 50%;
-    height: auto;
 }
 
 .gotopbtn {
@@ -57,7 +69,7 @@ h1 {
         position: fixed;
         width: 50px;
         height: 50px;
-        background: #d53a9d;
+        background: #C26090;
         bottom: 40px;
         right: 50px;
         border-radius: 10px;
@@ -79,10 +91,88 @@ h1 {
     max-width: 45px;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #C26090;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #d53a9d;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 70px;
+    font-size: 18px;
+    line-height: 70px;
+    border-radius: 35px;
+    background-color: #f1f1f1;
+    margin: 25px
+}
+
+.chip a {
+    color: black !important;
+    /* cursor: default; */
+    text-decoration: none !important;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
 .timeline {
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    text-align: left;
 }
 
     .timeline:before {
@@ -305,82 +395,4 @@ h1 {
 .about:last-child {
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-}
-
-.price {
-    color: grey;
-    font-size: 22px;
-}
-
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-.card button:hover {
-    opacity: 0.7;
-}
-
-input[type=text], select, textarea {
-    width: 50%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type=submit] {
-    background-color: #C26090;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #d53a9d;
-}
-
-.chip {
-    display: inline-block;
-    padding: 0 25px;
-    height: 70px;
-    font-size: 18px;
-    line-height: 70px;
-    border-radius: 35px;
-    background-color: #f1f1f1;
-    margin: 25px
-}
-
-.chip a {
-    color: black !important;
-    /* cursor: default; */
-    text-decoration: none !important;
-}
-
-.chip img {
-    float: left;
-    margin: 0 10px 0 -25px;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
 }
