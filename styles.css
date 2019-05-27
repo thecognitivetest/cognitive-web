@@ -98,6 +98,7 @@ video {
 }
 
 .navbar-brand {
+    margin-left: 0;
     max-width: 45px;
 }
 
