@@ -1,10 +1,13 @@
 @import "//fonts.googleapis.com/css?family=Montserrat";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  background-image: url("res/cognitivebackground.png");
+  background-repeat: repeat;
 }
 .landing-body{
   background-image: url("res/cognitivebackground.png");
+  background-repeat: repeat;
 }
 .padding-assist{
   padding-bottom: 168px;
