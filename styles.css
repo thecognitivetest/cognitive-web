@@ -3,15 +3,43 @@
 html {
     scroll-behavior: smooth;
 }
-
+.landing-body{
+  background-image: url("res/cognitivebackground.png");
+}
+.padding-assist{
+  padding-bottom: 168px;
+}
+@keyframes csoon{
+  0%{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes csoon2{
+  0%{
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  30%{
+      transform: scale(0.1);
+      opacity: 0;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* body {
     background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
     color: white !important;
 } */
-
 main {
     /* max-width: 1000px; */
-    margin: auto;
+    margin-bottom: auto;
     font-family: "Montserrat",sans-serif;
 }
 
@@ -41,15 +69,16 @@ video {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    /*background: #888;*/
+    background-color: black;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
 }
 
 .alert {
@@ -60,6 +89,15 @@ video {
     margin-top: 50px;
     max-width: 50%;
 }
+  @font-face {
+    src: url("fonts/SanFranciscoDisplay-Light.otf");
+    font-family:"sf-light";
+  }
+
+  @font-face {
+    src: url("fonts/SansFranciscoDisplay-Black.otf");
+    font-family: "sf-black";
+  }
 
 .gotopbtn {
     display: none;
@@ -84,11 +122,22 @@ video {
         cursor: default;
     }
 }
-
 .main-text {
-    margin-top: 30px;
+    margin-top: 168px;
 }
-
+.heading-temp{
+  font-size: 90px;
+  font-family: "sf-light", sans-serif;
+  font-weight: 1000;
+  animation-name: csoon;
+  animation-duration: 3.2s;
+}
+.subscribe-temp{
+    font-family: "sf-light", sans-serif;
+    font-size: 23px;
+    animation-name: csoon2;
+    animation-duration: 3s;
+}
 .gotopbtn:hover {
     color: white !important;
 }
@@ -100,6 +149,11 @@ video {
 .navbar-brand {
     margin-left: 0;
     max-width: 45px;
+}
+
+.bar-title{
+    font-family: "sf-black", sans-serif;
+    font-size: 30px;
 }
 
 .jumbotron {
@@ -174,10 +228,10 @@ video {
 
 input[type=text], select, textarea {
     width: 50%;
-    padding: 12px; 
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px; 
-    box-sizing: border-box; 
+    border-radius: 4px;
+    box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
 }
@@ -447,22 +501,35 @@ footer .copyright {
 .site-footer {
     padding: 7em 0;
     background: #393e46;
-    color: rgba(255, 255, 255, 0.4); 
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .site-footer a {
-    color: rgba(255, 255, 255, 0.7); 
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .site-footer a:hover {
-    color: #fff; 
+    color: #fff;
 }
 
 .site-footer .footer-heading {
     font-size: 18px;
-    color: #fff; 
+    color: #fff;
 }
 
 .site-footer ul li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+}
+.timeline-panel{
+  transition: transform 1s;
+}
+.timeline-panel:hover{
+    transform: scale(1.17);
+    background-color: Gainsboro;
+}
+.email-temp{
+  transition: transform 2s;
+}
+.email-temp{
+  transform: scale(1.2);
 }
